@@ -6,25 +6,30 @@
     <title>ElectriVision</title>
     <link rel="stylesheet" href="style.css">
     <link rel="icon" href="Assets/icon.png">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/kursor"></script>
+    <script src="https://cdn.jsdelivr.net/npm/kursor@0.0.14/dist/kursor.js"></script>
+    <link rel="stylesheet" href="https://unpkg.com/kursor/dist/kursor.css">
 </head>
 <body>
-    <header class="header">
-        <div class="logo"><img src="Assets/logo2.png" alt=""></div>
+    <header class="header" data-aos="fade-down">
+        <div class="logo"><img src="Assets/logo2.png" alt="Assets/logo2.png" width="50"></div>
         <div class="header-right">
             <div class="location-badge">Pamantasan ng Lungsod ng Valenzuela (PLV), <br> Maysan Valenzuela City </div><img class="loc=img" src="Assets/loc_img.png" alt="" class="loc-img">
             <a href="#" class="request-btn">Request an account</a>
         </div>
     </header>
 
-    <div class="main-logo">
-        <div><img src="Assets/logo.png" alt=""></div>
+    <div class="main-logo"  data-aos="fade-up" data-aos-delay="300">
+        <div><img src="Assets/logo.png" alt="Assets/logo.png"></div>
     </div>
 
-    <section class="main-content">
+    <section class="main-content" data-aos="fade-up">
         <h1>Electrical problems reporting<br>mobile app for <span>PLVians!</span></h1>
         <p>A unique and powerful software suite to transform the way reporting electrical problems around Pamantasan ng Lungsod ng Valenzuela (PLV).</p>
-        <div class="download-section">
-            <div>
+        <div class="download-section"  data-aos="fade-up" data-aos-delay="300">
+            <div >
                 <a href="APK/ElectriVision Reporter v3.0.2 (latest) (1).apk" class="download-btn reporter-btn">
                     Download Reporter App
                 </a>
@@ -38,32 +43,32 @@
                 <small>Latest Version v3.0.0</small>
             </div>
         </div>
-        <p class="android-note"><img src="Assets/android_img.png" alt=""> For Android only.</p>
+        <p class="android-note"><img src="Assets/android_img.png" alt="Assets/android_img.png"> For Android only.</p>
     </section>
 
-    <section class="about">
+    <section class="about" data-aos="fade-in">
         <div class="about-content">
             <h2>What is ElectriVision?</h2>
             <p>Empowering a safer and more efficient campus at Pamantasan ng Lungsod ng Valenzuela, ElectriVision is a dedicated electrical reporting system designed to streamline issue reporting and maintenance. Our platform enables users to quickly report electrical problems, ensuring prompt attention from campus staff and improved safety for all.</p>
         </div>
-        <div class="logo-circle"><img class="yellow_btn" src="Assets/yellow_btn.png" alt=""></div>
+        <div class="logo-circle"><img class="yellow_btn" src="Assets/yellow_btn.png" alt="" ></div>
     </section>
 
     <section class="features">
-        <div class="features-highlight">HIGHLIGHTS</div>
-        <h2>Features you love</h2>
+        <div class="features-highlight" data-aos="fade-up">HIGHLIGHTS</div>
+        <h2 data-aos="fade-up">Features you love</h2>
         <div class="features-grid">
-            <div class="feature-card">
+            <div class="feature-card" data-aos="fade-in" data-aos-delay="100">
                 <img src="Assets/feature1.png" alt="Easy to use illustration">
                 <h3>Ease to use</h3>
                 <p>Intuitive interface allows users to quickly report electrical issues with just a few taps, making it accessible for everyone on campus.</p>
             </div>
-            <div class="feature-card">
-                <img src="Assets/feature2.png" alt="GeoFencing illustration">
+            <div class="feature-card" data-aos="fade-in" data-aos-delay="200">
+                <img src="Assets/feature2.png" alt="GeoFencing illustration" >
                 <h3>GeoFencing</h3>
                 <p>Making sure only users inside the campus can report their electrical issues around their location, which gives another layer of security.</p>
             </div>
-            <div class="feature-card">
+            <div class="feature-card" data-aos="fade-in" data-aos-delay="300">
                 <img src="Assets/feature3.png" alt="Real-time Notifications illustration">
                 <h3>Real-time Notifications</h3>
                 <p>Keeps users informed with instant alerts and updates, ensuring they're always aware of maintenance progress and resolved issues.</p>
@@ -75,9 +80,26 @@
         <div>© ElectriVision 2024. All Rights Reserved</div>
         <div class="footer-links">
             <a href="#">Questionnaire (GForms)</a>
-            <a href="#">Gmail (For more inquiry)</a>
+            <a href="mailto:electrivisionplv@gmail.com">Gmail (For more inquiry)</a>
+            <a href="https://github.com/ElectriVision">GitHub Organization</a>
             <a href="https://electrivision-admin.vercel.app/admin/dashboard?fbclid=IwY2xjawGm1DRleHRuA2FlbQIxMAABHf6s3mzeppFTBSHaBOrCsoo11WHJ_imZabkvgpKEtPQ6s_-W7kF6cyrcfg_aem_Ty3w1Huce8I5od48YV5k1A">Admin Panel</a>
         </div>
     </footer>
+
+    <script>
+        AOS.init({
+            duration: 1000,  
+            offset: 200, 
+            once: true 
+        });
+    </script>
+
+    <script src="https://unpkg.com/kursor"></script>
+    <script>
+        new kursor({
+            type: 4,
+            color: '#ffa000'
+        })
+    </script>
 </body>
 </html>

@@ -255,6 +255,27 @@ body {
   margin-top: 0.5rem;
 }
 
+/* width */
+::-webkit-scrollbar {
+  width: 5px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: #b3b3b3;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #ffa000;
+  border-radius: 5px;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #ffa000;
+}
+
 .footer a {
   color: white;
   text-decoration: none;
@@ -265,6 +286,10 @@ body {
 
 .footer a:hover {
   opacity: 0.8;
+}
+
+* {
+  cursor: none;
 }
 
 @media (max-width: 768px) {
@@ -304,6 +329,10 @@ body {
     flex-direction: column;
     text-align: center;
     padding: 2rem 1rem;
+  }
+
+  .about-content {
+    width: 100%;
   }
 
   .logo-circle {
@@ -349,6 +378,10 @@ body {
 
   .footer {
     padding: 1rem;
+  }
+
+  .about-content {
+    width: 100%;
   }
 
   .footer-links {
