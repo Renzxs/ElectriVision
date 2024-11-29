@@ -130,6 +130,10 @@ body {
   background-color: #ffa000;
 }
 
+.reporter-beta-btn {
+  background-color: #333;
+}
+
 .maintenance-btn {
   background-color: #4a148c;
 }
